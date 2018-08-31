@@ -38,13 +38,13 @@ export default {
   methods: {
     onLoad() {
       setTimeout(() => {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 3; i++) {
           const text = this.list.length + 1;
           this.list.push(text < 10 ? '0' + text : text);
         }
         this.loading = false;
 
-        if (this.list.length >= 40) {
+        if (this.list.length >= 5) {
           this.finished = true;
         }
       }, 500);
